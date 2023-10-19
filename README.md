@@ -7,6 +7,6 @@ This repository holds the code used for the EMNLP 2023 paper. It is meant to pro
 | ...          | ...                      |...            |
 
 1. Speaker Type: Describes whether the utterance was spoken by the Interviewer or the Participant. We used this to select transcripts that were majority monological (majority spoken by Participant).
-2. IU no punctuation: Represents an IU utterance after filtering out punctuation.
+2. IU no punctuation: Represents an IU utterance after filtering out special symbols (e.g., for vowel lengthening, laughter, vocal noises).
 3. Clean Lag Tag: This is the most relevant column in our paper. It contains all relevant language tags for an IU, which for our analysis is some combination of E, S, or L. See the example above and in our paper.
 
