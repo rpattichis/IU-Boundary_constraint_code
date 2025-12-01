@@ -2,8 +2,7 @@
 
 This repository holds the code for the EMNLP 2023 paper titled ["Code-Switching Metrics Using Intonation Units"][https://aclanthology.org/2023.emnlp-main.1047/] and the 2025 _Computational Linguistics_ journal article titled ["Re-evaluating the word token for bilingual speech processing: The case for Intonation Units"][https://direct.mit.edu/coli/article/doi/10.1162/COLI.a.580/134133].
 
-```
-bash
+```bash
 ├── CL
 │   ├── CL_Comparisons.ipynb
 │   ├── CSTokenMetricsComparisons.py
