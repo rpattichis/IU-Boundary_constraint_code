@@ -4,33 +4,39 @@ Official code for:
 
 - ["Code-Switching Metrics Using Intonation Units"](https://aclanthology.org/2023.emnlp-main.1047/) (EMNLP 2023)
 
-We adapt two metrics, multilinguality and code-switching (CS) probability, and apply them to transcribed bilingual speech, for the first time putting forward Intonation Units (IUs) – prosodic speech segments – as basic tokens for NLP tasks. We calculate these two metrics separately for distinct mixing types: alternating-language multi-word strings and single-word incorporations from one language into another. Results indicate that there is a shared tendency among bilinguals for multi-word CS to occur across, rather than within, IU boundaries. 
+    We adapt two metrics, multilinguality and code-switching (CS) probability, for the first time putting forward Intonation Units (IUs) – prosodic speech segments – as basic tokens for NLP tasks. We calculate these two metrics separately for distinct mixing types: alternating-language multi-word strings and single-word incorporations from one language into another. Results indicate that there is a shared tendency among bilinguals for multi-word CS to occur across, rather than within, IU boundaries. 
 
 - ["Re-evaluating the word token for bilingual speech processing: The case for Intonation Units"](https://direct.mit.edu/coli/article/doi/10.1162/COLI.a.580/134133) (_Computational Linguistics_ 2025)
 
-Switch points are far more likely between words at IU boundaries than between words in the same IU. Here, we put forward an IU-based adaptation of a familiar metric of code-switching (CS) probability. We then compare the token levels on this metric. Our comparison shows that the currently standard two-significant-figure precision of the word-based metric is insufficient, as the token level compresses the range of values by inflating the universe of CS. 
+    Switch points are far more likely between words at IU boundaries than between words in the same IU. Here, we put forward an IU-based adaptation of a familiar metric of code-switching (CS) probability. We then compare the token levels for this metric. Our comparison shows that the currently standard two-significant-figure precision of the word-based metric is insufficient, as the token level compresses the range of values by inflating the universe of CS. 
 
-This repo contains code to **process IU and word tokens for two code-switching (CS) metrics**, namely the Integration Index (I-Index) (Guzmán et al 2017) and the Multilingual Index (M-Index) (Barnett et al. 2000)**. 
+This repo contains code to **process IU and word tokens for two code-switching (CS) metrics**, namely the Integration Index (I-Index) (Guzmán et al 2017) and the Multilingual Index (M-Index) (Barnett et al. 2000). 
 
 For the IU token, we have two methods of processing its language tags for the I-Index:
-1. Across-IU I-Index vs. Within-IU I-Index (EMNLP 2023):
-2. Unified I-Index (_Computational Linguistics_ 2025):
+1. Across-IU I-Index vs. Within-IU I-Index (EMNLP 2023)
+2. Unified I-Index (_Computational Linguistics_ 2025)
 
 ## Contents
 
 ```bash
 ├── CL
 │   ├── Language Distribution Graphs (word)/
-│   ├── CL_Comparisons.ipynb
+│   ├── CL_Demo.ipynb
 │   ├── CSTokenMetricsComparisons.py
 ├── EMNLP
 │   ├── Language Distribution Graphs/
-│   ├── EMNLP_IU_Boundary_code.ipynb
+│   ├── EMNLP_Demo.ipynb
 │   ├── IUBoundaryMetrics.py
 ├── README.md
 ```
 
-## Data Formatting
+## Running
+
+To run the demos for either paper and see how to use the code on a given transcript, look for and run `*_Demo.ipynb` respectively. 
+
+Class definitions can be found in the `*.py` files in each respective folder.
+
+### Data Formatting
 
 This code is meant to process transcripts where each row in a spreadsheet (e.g., Excel) represents a single Intonation Unit (IU), as shown below.
 
@@ -48,7 +54,7 @@ Note that the last column, 'Words Lang Tag', is only a requirement when running 
 
 ## Citations
 
-If using the code from the ```EMNLP`` folder, please cite as:
+If using the code from the `EMNLP` folder, please cite as:
 
 ```
 @inproceedings{pattichis2023code,
@@ -60,7 +66,7 @@ If using the code from the ```EMNLP`` folder, please cite as:
 }
 ```
 
-If using the code from the ```CL`` folder, please cite as:
+If using the code from the `CL` folder, please cite as:
 
 ```
 @article{pattichis2025re,
